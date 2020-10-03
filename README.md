@@ -3,6 +3,6 @@ Yahoo Movie Website scraping, data(name,release date) extraction.
 
 ### Simply Crawling and Scraping Web Pages with :
     Going on next page? (y/n) : y 
-  ##### Going on next page? (y/n) : n
-    Exit from the code, and shows 'Thanks, bye.'
+    Going on next page? (y/n) : n  >>> Exit from the code, and shows 'Thanks, bye.'
+    y or n can be Y, N, Y   ,   N.
   

@@ -17,7 +17,7 @@ class YahooMovie(object):
         self.page = 1
         
         
-    def loadPage(self,url):
+    def LoadPage(self,url):
         request = urllib.request.Request(url,headers = self.headers)
         response = urllib.request.urlopen(request)
         html = response.read().decode('utf-8')
@@ -49,14 +49,14 @@ class YahooMovie(object):
                 
     
     def Work(self):
-        self.loadPage(self.base_url)
+        self.LoadPage(self.base_url)
         while True:
             print('Done!')
             c = input('Going on next page? (y/n) : ')
             if c.strip().lower() == 'y':
                 self.page += 1
                 url = self.base_url + 'page=' + str(self.page)
-                self.loadPage(url)
+                self.LoadPage(url)
             else:
                 print('Thanks, bye.')
                 break

@@ -57,6 +57,16 @@ YahooMovie
          writer.writerow(movie_list)
          writer.writerow('')
         
->>>  Going on next page? (y/n) : y 
->>>  Going on next page? (y/n) : n  >>> Exit from the code, and shows 'Thanks, bye.'
-     y or n can be Y, N, Y   ,   N.
+#### 5. Rerun again:
+	c = input('Going on next page? (y/n) : ')
+	# if going to crawl next page >>> y
+        if c.strip().lower() == 'y':
+           self.page += 1
+           url = self.base_url + 'page=' + str(self.page)
+	   # Go to the first function, LoadPage
+           self.LoadPage(url)
+	# if not going to crawl next page >>> n
+        else:
+	    # Exit from the code, and shows 'Thanks, bye.'
+            print('Thanks, bye.')
+            break

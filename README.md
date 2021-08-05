@@ -58,8 +58,7 @@ YahooMovie
      for m_tuple in movie :
          with open('Yahoo_OnMovies.csv','a',newline='',encoding='utf-8')as f:
          writer = csv.writer(f)
-	 # 將列表寫入csv內(列表形式)
-         # 須將m_tuple改成列表[ , , ]再存入，記得去空白
+	 # change type tuple into type list and strip spaces before saving 
          movie_list = [m_tuple[0].strip(),m_tuple[1]]                
          writer.writerow(movie_list)
          writer.writerow('')

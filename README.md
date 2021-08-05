@@ -1,11 +1,9 @@
 Yahoo Movie Website scraping, data(name,release date) extraction.
 
-yahoo movie top100, save to csv
-https://movies.yahoo.com.tw/movie_intheaters.html
-Movie Name、Release Time
-page 1 = https://movies.yahoo.com.tw/movie_intheaters.html?
-page 2 = https://movies.yahoo.com.tw/movie_intheaters.html?page=2
-page n = https://movies.yahoo.com.tw/movie_intheaters.html?page=n
+yahoo movie top100, (Movie Name, Released Time)save to csv  
+page 1 = https://movies.yahoo.com.tw/movie_intheaters.html? 
+page 2 = https://movies.yahoo.com.tw/movie_intheaters.html?page=2 
+page n = https://movies.yahoo.com.tw/movie_intheaters.html?page=n 
 
  
 ## Requirements
